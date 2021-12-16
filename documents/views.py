@@ -63,7 +63,7 @@ class Home(ListView):
 
 def home2(request):
     idcards = Idcollection.objects.all().order_by('-created_on')[:4]
-    idcard2 = Idcollection.objects.all()
+    idcard2 = Idcollection.objects.all().order_by('-created_on')
     paginatordata = Idcollection.objects.all()
     page = Paginator(paginatordata, 1)
 
