@@ -72,7 +72,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'lostandfound.urls'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TEMPLATES = [
     {
@@ -142,7 +141,7 @@ LOGIN_URL = '/login/'
 
 STATIC_URL = '/static/'
 
-STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
@@ -154,6 +153,9 @@ MEDIA_URL = '/image/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'api.User'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
