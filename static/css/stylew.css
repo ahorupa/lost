@@ -264,7 +264,7 @@
     padding-left: 50px;
     padding-bottom: 30px;
     border-radius: 10px;
-    font-family: poppins;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footerRight form h2 {
@@ -288,7 +288,7 @@
     padding: 5px 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: none;
+    border: 60;
     background-color: rgb(243, 243, 243);
 }
 
